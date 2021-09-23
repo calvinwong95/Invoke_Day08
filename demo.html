@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="demo-styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+<body>
+    <div id="container">
+        <h1>0</h1>
+        <h1>0</h1>
+        <div class="btn" onclick="count(-1)">-</div>
+        <div class="btn" onclick="count(1)">+</div>
+
+
+        <!-- first version
+        onclick="changeBg('blue')"
+            onmouseover="overBtn()" onmouseout="outBtn()" onmouseup="upBtn()" onmousedown="downBtn()-->
+        <div 
+            class="color-btn"
+            id="blue-btn"
+            onclick="changeBg('blue')">Blue
+        </div>
+        <div 
+            class="color-btn" 
+            id="red-btn"
+            onclick="changeBg('red')">Red
+        </div>
+
+        <!-- second version-->
+        <div class="color-btn" onclick="changeBg('green')" id="green-btn">Green</div>
+
+
+    </div>
+
+
+
+    <script src="demo-script.js"></script>
+</body>
+</html>

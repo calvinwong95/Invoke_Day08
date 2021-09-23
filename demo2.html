@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="demo-styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <div id="container">
+        <video id="vid" src="mov_bbb.mp4" width="600px" controls loop></video>
+        <br>
+        <div class="video-btn" onclick="playVid()">Play</div>
+        <div class="video-btn" onclick="pauseVid()">Pause</div>
+
+
+        <div class="video-btn" onclick="updateVol(-0.1)">Volume --</div>
+        <div class="video-btn"
+        onclick="updateVol(+0.1)">Volume ++</div>
+
+        <br>
+
+        <div id="switch-btn" class="video-btn"
+        onclick="playOrStop()">
+            <i class="fas fa-play "></i>
+        </div>
+
+
+        <p onclick="switchVid('mov_bbb.mp4')">Play BBB</p>
+        <p onclick="switchVid('movie.mp4')">Play Bear</p>
+    </div>
+
+    <script src="demo2.js"></script>
+</body>
+</html>

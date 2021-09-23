@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="styles.css" rel="stylesheet">
+    <meta named="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-video">
+            <video id="video" class="video"  src="mov_bbb.mp4"></video>
+        </div>
+
+        <div class="container-button">
+            <div class="holder-buttons">
+                <div
+                    id="play-prev" 
+                    onclick="switchVid(-1)">
+                    <i class="fas fa-backward"></i>
+                </div>
+
+                <div
+                id="play-stop"
+                onclick="playSwitch()"><i class='fas fa-play'></i></div>
+
+                <div
+                id="play-next"
+                onclick="switchVid(1)"><i class="fas fa-forward"></i></div>
+            </div>
+            <div class="holder-volume">
+                <div id="volume-up" class="volume-button"
+                onclick="volChange(0.1)">
+                <i class="fas fa-volume-up"></i>
+                
+                </div>
+                <div id="volume-down" class="volume-button" onclick="volChange(-0.1)"
+                ><i class="fas fa-volume-down"></i>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
